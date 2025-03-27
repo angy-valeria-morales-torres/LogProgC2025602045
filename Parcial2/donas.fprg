@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donas"/>
+        <attribute name="authors" value="angyv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 10:53:54 p. m."/>
+        <attribute name="created" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wMy0yNjsxMDozNzowNCBwLiBtLjsyODc0"/>
+        <attribute name="edited" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wMy0yNjsxMDo1Mzo1NCBwLiBtLjsxOzI5ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Donas, Cant, Costo" type="Integer" array="False" size=""/>
+            <assign variable="Donas" expression="10"/>
+            <assign variable="Cant" expression="0"/>
+            <assign variable="Costo" expression="0"/>
+            <input variable="Cant"/>
+            <if expression="Cant&gt;49">
+                <then>
+                    <assign variable="Costo" expression="(Cant*Donas)-(Cant*2)"/>
+                </then>
+                <else>
+                    <if expression="Cant&gt;29">
+                        <then>
+                            <assign variable="Costo" expression="(Cant*Donas)-(Cant*1)"/>
+                        </then>
+                        <else>
+                            <assign variable="Costo" expression="(Cant*Donas)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
