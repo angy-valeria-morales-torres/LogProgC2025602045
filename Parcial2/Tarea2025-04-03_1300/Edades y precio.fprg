@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Edades y precio"/>
+        <attribute name="authors" value="angyv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 04:36:29 p. m."/>
+        <attribute name="created" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0wMTswMzoxODoxOCBwLiBtLjsyODc0"/>
+        <attribute name="edited" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0wMTswNDozNjoyOSBwLiBtLjsxOzI5ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <assign variable="edad" expression="0"/>
+            <input variable="edad"/>
+            <if expression="edad&lt;4">
+                <then>
+                    <output expression="&quot;gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;=4 &amp;&amp; edad&lt;=18">
+                        <then>
+                            <output expression="&quot;200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad&gt;18">
+                                <then>
+                                    <output expression="&quot;500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
