@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial-morales"/>
+        <attribute name="authors" value="angyv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 08:49:47 a. m."/>
+        <attribute name="created" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0xMDswODozNTowNCBhLiBtLjsyODU4"/>
+        <attribute name="edited" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0xMDswODo0OTo0NyBhLiBtLjsxOzI5Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, factorial" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="factorial" expression="numero"/>
+            <while expression="numero&gt;1">
+                <assign variable="numero" expression="numero-1"/>
+                <assign variable="factorial" expression="factorial*numero"/>
+            </while>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

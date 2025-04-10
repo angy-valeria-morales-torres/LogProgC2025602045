@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci"/>
+        <attribute name="authors" value="angyv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 08:32:06 a. m."/>
+        <attribute name="created" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0xMDswODowNTozOSBhLiBtLjsyODYz"/>
+        <attribute name="edited" value="YW5neXY7QU5HWV9NT1JJVEE7MjAyNS0wNC0xMDswODozMjowNiBhLiBtLjsyOzI5NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="c" expression="1"/>
+            <assign variable="d" expression="1"/>
+            <output expression="&quot;Escriba el numero que desee&quot;" newline="True"/>
+            <input variable="a"/>
+            <for variable="i" start="2" end="a" direction="inc" step="1">
+                <assign variable="b" expression="d+c"/>
+                <assign variable="d" expression="c"/>
+                <assign variable="c" expression="b"/>
+                <output expression="b" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
